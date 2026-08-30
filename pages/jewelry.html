@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бижутерия | TutiBreath</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="../index.html"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></a>
+<nav class="desktop-nav">
+<a href="perfume.html">Парфюм</a>
+<a href="jewelry.html">Бижутерия</a>
+<a href="../index.html#sales">Скидки</a>
+<a href="favorites.html">♡ Избранное <i id="favCount">0</i></a>
+<a href="contact.html">Контакты</a>
+</nav>
+<a class="head-btn" href="../index.html">⌂</a>
+<button class="head-btn menu-btn" id="menuBtn">☰</button>
+</header>
+<main>
+<section class="page-hero">
+<p class="eyebrow">TUTIBREATH</p>
+<h1>Бижутерия</h1>
+<p>Глина, бусины и другие изделия ручной работы на ваш вкус.</p>
+</section>
+<section class="section">
+<div class="filters" id="filters">
+<button class="filter active" data-filter="all">Все</button>
+<button class="filter" data-filter="gil">Глина</button>
+<button class="filter" data-filter="muncuq">Бусины</button>
+<button class="filter" data-filter="uzuk">Кольца</button>
+<button class="filter" data-filter="boyunbagi">Колье</button>
+<button class="filter" data-filter="bilerzik">Браслеты</button>
+</div>
+<div class="search-box page-search"><span>⌕</span><input id="searchInput" placeholder="Поиск бижутерии..."><button id="clearSearch">Очистить</button></div>
+<div class="grid" id="jewelryGrid"></div>
+</section>
+</main>
+<footer><div class="logo"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></div><p>© 2026 TutiBreath. Все права защищены.</p></footer>
+<div class="modal" id="productModal">
+<div class="modal-backdrop" data-close></div>
+<article class="modal-box">
+<button class="close" data-close>×</button>
+<div class="modal-image" id="modalImage"></div>
+<div class="modal-info">
+<p class="eyebrow" id="modalCategory"></p>
+<h2 id="modalName"></h2>
+<p id="modalDescription"></p>
+<div id="modalSizes" class="sizes"></div>
+<div class="modal-actions">
+<button class="btn primary" id="modalOrder">Заказать — WhatsApp</button>
+<button class="btn" id="modalShare">↗ Поделиться</button>
+</div>
+</div>
+</article>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+<button class="close" id="closeMenu">×</button>
+<a href="perfume.html">Парфюм</a>
+<a href="jewelry.html">Бижутерия</a>
+<a href="../index.html#sales">Скидки</a>
+<a href="favorites.html">♡ Избранное</a>
+<a href="contact.html">Контакты</a>
+</div>
+<nav class="bottom-nav">
+<a href="../index.html">⌂<span>Главная</span></a>
+<a href="perfume.html">♢<span>Парфюм</span></a>
+<a href="favorites.html">♡<span>Избранное</span></a>
+<a href="jewelry.html">◇<span>Бижутерия</span></a>
+<a href="contact.html">☎<span>Контакты</span></a>
+</nav>
+<div class="toast" id="toast"></div>
+<script src="../data/products.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/products.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let filter="all",term="";
+function render(){
+  let arr=PRODUCTS.filter(p=>p.type==="jewelry"&&(filter==="all"||p.category===filter||p.tags.includes(filter))&&(!term||[p.name,p.category,...p.tags].join(" ").toLowerCase().includes(term.toLowerCase())));
+  $("#jewelryGrid").innerHTML=arr.length?arr.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Подходящих товаров не найдено.</div>';
+  bind();
+}
+function bind(){
+  $("[data-close]").onclick=closeProduct;
+  $("#modalOrder").onclick=()=>currentProduct&&orderProduct(currentProduct.id);
+  $("#modalShare").onclick=()=>shareProduct();
+  $$("[data-fav]").forEach(x=>x.onclick=()=>{toggleFavorite(x.dataset.fav);render()});
+  $$("[data-open]").forEach(x=>x.onclick=()=>openProduct(x.dataset.open));
+  $$("[data-order]").forEach(x=>x.onclick=()=>orderProduct(x.dataset.order));
+  $$(".filter").forEach(x=>x.onclick=()=>{filter=x.dataset.filter;$$(".filter").forEach(y=>y.classList.remove("active"));x.classList.add("active");render()});
+}
+$("#searchInput").oninput=e=>{term=e.target.value;render()};
+$("#clearSearch").onclick=()=>{$$("#searchInput")[0].value="";term="";render()};
+render();
+document.getElementById("menuBtn")?.addEventListener("click",()=>document.getElementById("mobileMenu").classList.add("open"));
+document.getElementById("closeMenu")?.addEventListener("click",()=>document.getElementById("mobileMenu").classList.remove("open"));
+</script>
+</body>
+</html>

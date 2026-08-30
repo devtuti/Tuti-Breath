@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Избранное | TutiBreath</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="../index.html"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></a>
+<nav class="desktop-nav">
+<a href="perfume.html">Парфюм</a>
+<a href="jewelry.html">Бижутерия</a>
+<a href="../index.html#sales">Скидки</a>
+<a href="favorites.html">♡ Избранное <i id="favCount">0</i></a>
+<a href="contact.html">Контакты</a>
+</nav>
+<a class="head-btn" href="../index.html">⌂</a>
+</header>
+<main>
+<section class="page-hero">
+<p class="eyebrow">ВАШ ВЫБОР</p>
+<h1>Избранное</h1>
+<p>Выбранные вами товары сохраняются на этом устройстве.</p>
+</section>
+<section class="section">
+<div class="grid" id="favoriteGrid"></div>
+<div class="empty" id="empty">Пока ничего не выбрано.</div>
+</section>
+</main>
+<footer><div class="logo"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></div><p>© 2026 TutiBreath. Все права защищены.</p></footer>
+<div class="modal" id="productModal">
+<div class="modal-backdrop" data-close></div>
+<article class="modal-box">
+<button class="close" data-close>×</button>
+<div class="modal-image" id="modalImage"></div>
+<div class="modal-info">
+<p class="eyebrow" id="modalCategory"></p>
+<h2 id="modalName"></h2>
+<p id="modalDescription"></p>
+<div id="modalSizes" class="sizes"></div>
+<div class="modal-actions">
+<button class="btn primary" id="modalOrder">Заказать — WhatsApp</button>
+<button class="btn" id="modalShare">↗ Поделиться</button>
+</div>
+</div>
+</article>
+</div>
+<nav class="bottom-nav">
+<a href="../index.html">⌂<span>Главная</span></a>
+<a href="perfume.html">♢<span>Парфюм</span></a>
+<a href="favorites.html">♡<span>Избранное</span></a>
+<a href="jewelry.html">◇<span>Бижутерия</span></a>
+<a href="contact.html">☎<span>Контакты</span></a>
+</nav>
+<div class="toast" id="toast"></div>
+<script src="../data/products.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/products.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+function render(){
+  let a=PRODUCTS.filter(p=>isFavorite(p.id));
+  $("#favoriteGrid").innerHTML=a.map(productCard).join("");
+  $("#empty").style.display=a.length?"none":"block";
+  $("#favCount").textContent=favoriteCount();
+  $$("[data-fav]").forEach(x=>x.onclick=()=>{toggleFavorite(x.dataset.fav);render()});
+  $$("[data-open]").forEach(x=>x.onclick=()=>openProduct(x.dataset.open));
+  $$("[data-order]").forEach(x=>x.onclick=()=>orderProduct(x.dataset.order));
+}
+$$("[data-close]").forEach(x=>x.onclick=closeProduct);
+$("#modalOrder").onclick=()=>currentProduct&&orderProduct(currentProduct.id);
+$("#modalShare").onclick=()=>shareProduct();
+render();
+</script>
+</body>
+</html>

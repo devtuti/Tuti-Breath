@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#9b7ed9">
+<title>TutiBreath Parfume | Каталог</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></a>
+  <nav class="desktop-nav">
+    <a href="pages/perfume.html">Парфюм</a>
+    <a href="pages/jewelry.html">Бижутерия</a>
+    <a href="#sales">Скидки</a>
+    <a href="pages/favorites.html">♡ Избранное <i id="favCount">0</i></a>
+    <a href="pages/contact.html">Контакты</a>
+  </nav>
+  <button class="head-btn" id="searchBtn">⌕</button>
+  <button class="head-btn menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">TUTIBREATH PARFUME</p>
+    <h1>Выбери аромат.<br><em>Создай свой стиль.</em></h1>
+    <p>Оригинальная парфюмерия, отдушка и изысканная бижутерия из глины и бусин.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="pages/perfume.html">Смотреть каталог</a>
+      <a class="btn" href="pages/jewelry.html">Перейти к бижутерии</a>
+    </div>
+  </div>
+  <div class="hero-circle">TB</div>
+</section>
+
+<section class="search-panel" id="searchPanel">
+  <div><p class="eyebrow">КАТАЛОГ</p><h2>Поиск товаров</h2></div>
+  <div class="search-box"><span>⌕</span><input id="searchInput" placeholder="Dior, 10 мл, бусины..." autocomplete="off"><button id="clearSearch">Очистить</button></div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><p class="eyebrow">ПАРФЮМ</p><h2>Избранные ароматы</h2></div><a class="text-link" href="pages/perfume.html">Смотреть все →</a></div>
+  <div class="grid" id="homePerfumes"></div>
+</section>
+
+<section class="section jewelry-home">
+  <div class="section-head"><div><p class="eyebrow">БИЖУТЕРИЯ</p><h2>Бижутерия</h2></div><a class="text-link" href="pages/jewelry.html">Смотреть все →</a></div>
+  <div class="grid" id="homeJewelry"></div>
+</section>
+
+<section class="sale-banner" id="sales">
+  <div><p class="eyebrow">СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</p><h2>Скидки и акции</h2><p>Когда будут акции, здесь появятся товары со скидкой.</p></div>
+  <a class="btn primary" href="#saleGrid">Смотреть скидки</a>
+</section>
+<section class="section compact"><div class="grid" id="saleGrid"></div></section>
+
+<section class="contact-strip">
+  <div><p class="eyebrow">КОНТАКТЫ</p><h2>Напишите для заказа</h2><p>Нажмите кнопку «Заказать» на нужном товаре.</p></div>
+  <a class="contact-mini whatsapp" href="https://wa.me/79935190592" target="_blank">WhatsApp<br><b>+7 (993) 519 05 92</b></a>
+  <a class="contact-mini" href="https://t.me/tutibreath" target="_blank">Telegram<br><b>@tutibreath</b></a>
+</section>
+</main>
+
+<footer><div class="logo"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></div><p>© 2026 TutiBreath. Все права защищены.</p></footer>
+
+<div class="modal" id="productModal">
+  <div class="modal-backdrop" data-close></div>
+  <article class="modal-box">
+    <button class="close" data-close>×</button>
+    <div class="modal-image" id="modalImage"></div>
+    <div class="modal-info">
+      <p class="eyebrow" id="modalCategory"></p>
+      <h2 id="modalName"></h2>
+      <p id="modalDescription"></p>
+      <div id="modalSizes" class="sizes"></div>
+      <div class="modal-actions">
+        <button class="btn primary" id="modalOrder">Заказать — WhatsApp</button>
+        <button class="btn" id="modalShare">↗ Поделиться</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close" id="closeMenu">×</button>
+  <a href="pages/perfume.html">Парфюм</a>
+  <a href="pages/jewelry.html">Бижутерия</a>
+  <a href="#sales">Скидки</a>
+  <a href="pages/favorites.html">♡ Избранное</a>
+  <a href="pages/contact.html">Контакты</a>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html">⌂<span>Главная</span></a>
+  <a href="pages/perfume.html">♢<span>Парфюм</span></a>
+  <a href="pages/favorites.html">♡<span>Избранное</span></a>
+  <a href="pages/jewelry.html">◇<span>Бижутерия</span></a>
+  <a href="pages/contact.html">☎<span>Контакты</span></a>
+</nav>
+
+<div class="toast" id="toast"></div>
+<script src="data/products.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@ const PRODUCTS = [
     id:"p1",
     type:"perfume",
     category:"original",
+    marka: "Dior",
     name:"Dior Sauvage",
     tags:["dior","sauvage","мужской","unisex"],
     description:"Оригинальная парфюмерия.",

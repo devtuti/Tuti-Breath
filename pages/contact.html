@@ -17,6 +17,7 @@
 <a href="contact.html">Контакты</a>
 </nav>
 <a class="head-btn" href="../index.html">⌂</a>
+<button class="head-btn menu-btn" id="menuBtn">☰</button>
 </header>
 <main>
 <section class="page-hero">
@@ -31,6 +32,14 @@
 </section>
 </main>
 <footer><div class="logo"><span class="logo-mark">TB</span><span><b>TutiBreath</b><small>PARFUME</small></span></div><p>© 2026 TutiBreath. Все права защищены.</p></footer>
+<div class="mobile-menu" id="mobileMenu">
+<button class="close" id="closeMenu">×</button>
+<a href="perfume.html">Парфюм</a>
+<a href="jewelry.html">Бижутерия</a>
+<a href="../index.html#sales">Скидки</a>
+<a href="favorites.html">♡ Избранное</a>
+<a href="contact.html">Контакты</a>
+</div>
 <nav class="bottom-nav">
 <a href="../index.html">⌂<span>Главная</span></a>
 <a href="perfume.html">♢<span>Парфюм</span></a>
@@ -38,5 +47,10 @@
 <a href="jewelry.html">◇<span>Бижутерия</span></a>
 <a href="contact.html">☎<span>Контакты</span></a>
 </nav>
+<script>
+    document.getElementById("menuBtn")?.addEventListener("click",()=>document.getElementById("mobileMenu").classList.add("open"));
+    document.getElementById("closeMenu")?.addEventListener("click",()=>document.getElementById("mobileMenu").classList.remove("open"));
+
+</script>
 </body>
 </html>

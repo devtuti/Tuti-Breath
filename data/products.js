@@ -6,7 +6,7 @@ const PRODUCTS = [
   {
     id:"p1",
     type:"perfume",
-    category:"на разлив",
+    category:"на_разлив",
     marka: "Lanvin",
     name:"Lanvin Marry me",
     tags:["lanvin","marry me","woman","женский"],
@@ -16,7 +16,218 @@ const PRODUCTS = [
     sale:false,
     featured:true
   },
+
   {
+    id: "p2",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Dior",
+    name: "J'adore Dior",
+    tags: ["dior", "jadore", "j'adore", "woman", "женский"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/jadore dior.jpg",
+    sizes: [
+      { label: "10 мл", price: 276 },
+      { label: "12 мл", price: 345 },
+      { label: "15 мл", price: 417 },
+      { label: "20 мл", price: 555 },
+      { label: "25 мл", price: 693 },
+      { label: "30 мл", price: 831 },
+      { label: "50 мл", price: 1386 },
+      { label: "100 мл", price: 2775 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p3",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Dolce & Gabbana",
+    name: "Dolce & Gabbana Light Blue",
+    tags: ["dolce gabbana", "d&g", "light blue", "woman", "женский"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/dolce gabbana light blue.jpg",
+    sizes: [
+      { label: "10 мл", price: 288 },
+      { label: "12 мл", price: 360 },
+      { label: "15 мл", price: 435 },
+      { label: "20 мл", price: 579 },
+      { label: "25 мл", price: 723 },
+      { label: "30 мл", price: 867 },
+      { label: "50 мл", price: 1446 },
+      { label: "100 мл", price: 2895 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p4",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Paco Rabanne",
+    name: "Invictus Paco Rabanne",
+    tags: ["paco rabanne", "invictus", "man", "мужской"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/invictus paco rabanne.jpg",
+    sizes: [
+      { label: "10 мл", price: 389 },
+      { label: "12 мл", price: 486 },
+      { label: "15 мл", price: 587 },
+      { label: "20 мл", price: 781 },
+      { label: "25 мл", price: 976 },
+      { label: "30 мл", price: 1170 },
+      { label: "50 мл", price: 1951 },
+      { label: "100 мл", price: 3906 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p5",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Versace",
+    name: "Versace Eau Fraiche",
+    tags: ["versace", "eau fraiche", "fresh", "man", "мужской"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/versace eau fraiche.jpg",
+    sizes: [
+      { label: "10 мл", price: 360 },
+      { label: "12 мл", price: 432 },
+      { label: "15 мл", price: 543 },
+      { label: "20 мл", price: 723 },
+      { label: "25 мл", price: 903 },
+      { label: "30 мл", price: 1083 },
+      { label: "50 мл", price: 1806 },
+      { label: "100 мл", price: 3615 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p6",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Essential Parfums",
+    name: "Bois Impérial Essential Parfums",
+    tags: ["essential parfums", "bois imperial", "unisex", "унисекс"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/bois imperial essential parfums.jpg",
+    sizes: [
+      { label: "10 мл", price: 663 },
+      { label: "12 мл", price: 825 },
+      { label: "15 мл", price: 993 },
+      { label: "20 мл", price: 1323 },
+      { label: "25 мл", price: 1653 },
+      { label: "30 мл", price: 1983 },
+      { label: "50 мл", price: 3306 },
+      { label: "100 мл", price: 6615 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p7",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Chanel",
+    name: "Allure Homme Sport Chanel",
+    tags: ["chanel", "allure homme sport", "man", "мужской"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/allure homme sport chanel.jpg",
+    sizes: [
+      { label: "10 мл", price: 264 },
+      { label: "12 мл", price: 330 },
+      { label: "15 мл", price: 396 },
+      { label: "20 мл", price: 531 },
+      { label: "25 мл", price: 663 },
+      { label: "30 мл", price: 795 },
+      { label: "50 мл", price: 1326 },
+      { label: "100 мл", price: 2655 }
+    ],
+    sale: false,
+    featured: true
+  },
+
+  // =====================================================
+  // ZEN SHISEIDO
+  // =====================================================
+  {
+    id: "p8",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Shiseido",
+    name: "Zen Shiseido",
+    tags: ["shiseido", "zen shiseido", "zen", "woman", "женский"],
+    description: "парфюмерия на разлив.",
+    image: "images/perfumes/zen shiseido.jpg",
+    sizes: [
+      {label: "10 мл", price: 312},
+      {label: "12 мл", price: 390},
+      {label: "15 мл", price: 471},
+      {label: "20 мл", price: 627},
+      {label: "25 мл", price: 783},
+      {label: "30 мл", price: 939},
+      {label: "50 мл", price: 1566},
+      {label: "100 мл", price: 3135}
+    ],
+    sale: false,
+    featured: true
+  },
+
+  // =====================================================
+  // VERSACE VERSENSE
+  // =====================================================
+  {
+    id: "p9",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Versace",
+    name: "Versace Versense",
+    tags: ["versace", "versense", "versace versense", "woman", "женский"],
+    description: "парфюмерия на разлив.",
+    image: "images/perfumes/versace versense.jpg",
+    sizes: [
+      {label: "10 мл", price: 327},
+      {label: "12 мл", price: 405},
+      {label: "15 мл", price: 486},
+      {label: "20 мл", price: 651},
+      {label: "25 мл", price: 813},
+      {label: "30 мл", price: 975},
+      {label: "50 мл", price: 1626},
+      {label: "100 мл", price: 3255}
+    ],
+    sale: false,
+    featured: true
+  },
+
+  // =====================================================
+  // CHANEL CHANCE
+  // =====================================================
+  {
+    id: "p10",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Chanel",
+    name: "Chanel Chance",
+    tags: ["chanel", "chance", "chanel chance", "woman", "женский"],
+    description: "парфюмерия на разлив.",
+    image: "images/perfumes/chanel chance.jpg",
+    sizes: [
+      {label: "10 мл", price: 288},
+      {label: "12 мл", price: 360},
+      {label: "15 мл", price: 453},
+      {label: "20 мл", price: 603},
+      {label: "25 мл", price: 753},
+      {label: "30 мл", price: 903},
+      {label: "50 мл", price: 1506},
+      {label: "100 мл", price: 3015}
+    ],
+    sale: false,
+    featured: true
+  },
+  /*{
     id:"p2",
     type:"perfume",
     category:"original",
@@ -28,18 +239,7 @@ const PRODUCTS = [
     sale:false,
     featured:true
   },
-  {
-    id:"p3",
-    type:"perfume",
-    category:"otdushka",
-    name:"Отдушка",
-    tags:["otdushka","unisex"],
-    description:"Отдушка.",
-    image:"",
-    sizes:[{label:"10 мл",price:0},{label:"30 мл",price:0}],
-    sale:false,
-    featured:false
-  },
+  
   {
     id:"j1",
     type:"jewelry",
@@ -63,5 +263,5 @@ const PRODUCTS = [
     sizes:[{label:"1 шт",price:0}],
     sale:false,
     featured:true
-  }
+  }*/
 ];

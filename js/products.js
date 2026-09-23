@@ -1,13 +1,46 @@
 const WHATSAPP_NUMBER="79935190592";
 let currentProduct=null;
 
+// =====================================================
+// ASSET PATH
+// products.js is shared by index.html and pages/*.html.
+// Product data stores paths from the TB root:
+// images/perfumes/example.jpg
+//
+// index.html         -> images/perfumes/example.jpg
+// pages/perfume.html -> ../images/perfumes/example.jpg
+// =====================================================
+function getAssetPath(path){
+  if(!path) return "";
+
+  // Leave absolute/external/data URLs unchanged.
+  if(
+    path.startsWith("http://") ||
+    path.startsWith("https://") ||
+    path.startsWith("data:") ||
+    path.startsWith("//")
+  ){
+    return path;
+  }
+
+  // HTML files inside /pages/ are one directory deeper.
+  const inPages = window.location.pathname.includes("/pages/");
+
+  return inPages ? "../" + path : path;
+}
+
 function money(n){return n?new Intl.NumberFormat("ru-RU").format(n)+" ₽":"Цена будет добавлена"}
+
+
 function productImage(p){
-  const cls=p.type==="jewelry"?"jewelry":"";
+  const cls = p.type === "jewelry" ? "jewelry" : "";
+
   return p.image
-    ? `<img src="${p.image}" alt="${p.name}" onerror="this.style.display='none'">`
+    ? `<img src="${getAssetPath(p.image)}" alt="${p.name}" onerror="this.style.display='none'" width="100%" height="100%">`
     : `<span class="placeholder">${p.name.slice(0,2).toUpperCase()}</span>`;
 }
+
+
 function productCard(p){
   const active=isFavorite(p.id);
   return `<article class="card">

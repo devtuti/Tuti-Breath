@@ -8,8 +8,9 @@ function updateFavCount(){const el=$("#favCount");if(el)el.textContent=favoriteC
 function renderHome(){
   const q=searchTerm.toLowerCase();
   const match=p=>!q||[p.name,p.category,...p.tags].join(" ").toLowerCase().includes(q);
-  const perf=PRODUCTS.filter(p=>p.type==="perfume"&&p.featured&&match(p)).slice(0,4);
-  const jew=PRODUCTS.filter(p=>p.type==="jewelry"&&p.featured&&match(p)).slice(0,4);
+  const perf=PRODUCTS.filter(p=>p.type==="perfume"&&p.featured&&match(p)).slice(0,3);
+  const jew=PRODUCTS.filter(p=>p.type
+    ==="jewelry"&&p.featured&&match(p)).slice(0,3);
   const sales=PRODUCTS.filter(p=>p.sale&&match(p));
   $("#homePerfumes").innerHTML=perf.length?perf.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Подходящих товаров не найдено.</div>';
   $("#homeJewelry").innerHTML=jew.length?jew.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Подходящих товаров не найдено.</div>';

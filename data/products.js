@@ -452,15 +452,16 @@ const PRODUCTS = [
     featured: true
   },
 
-  /*{
-    id:"p2",
+  {
+    id:"p20",
     type:"perfume",
     category:"original",
-    name:"Оригинальный аромат",
+    marka: "Dolce Gabbana",
+    name:"Dolce Gabbana Light Blue",
     tags:["original","женский"],
     description:"Оригинальная парфюмерия.",
-    image:"",
-    sizes:[{label:"10 мл",price:0},{label:"30 мл",price:0}],
+    image:"images/perfumes/dolce gabbana light blue.jpg",
+    sizes:[{label:"10 мл",price:2876}],
     sale:false,
     featured:true
   },
@@ -469,11 +470,11 @@ const PRODUCTS = [
     id:"j1",
     type:"jewelry",
     category:"gil",
-    name:"Глиняная бижутерия",
+    name:"СГ0001",
     tags:["gil","бижутерия","глина"],
     description:"Бижутерия ручной работы из глины.",
-    image:"",
-    sizes:[{label:"1 шт",price:0}],
+    image:"images/jewelry/СГ0001.jpg",
+    sizes:[{label:"1 шт",price:557}],
     sale:false,
     featured:true
   },
@@ -481,12 +482,12 @@ const PRODUCTS = [
     id:"j2",
     type:"jewelry",
     category:"muncuq",
-    name:"Бижутерия из бусин",
+    name:"СБ0001",
     tags:["muncuq","бижутерия","бусины"],
     description:"Бижутерия из бусин.",
-    image:"",
-    sizes:[{label:"1 шт",price:0}],
+    image:"images/jewelry/СБ0001.jpg",
+    sizes:[{label:"1 шт",price:947}],
     sale:false,
     featured:true
-  }*/
+  }
 ];

@@ -469,7 +469,7 @@ const PRODUCTS = [
   {
     id:"j1",
     type:"jewelry",
-    category:"gil",
+    category:"глина",
     name:"СГ0001",
     tags:["gil","бижутерия","глина"],
     description:"Бижутерия ручной работы из глины.",
@@ -481,7 +481,7 @@ const PRODUCTS = [
   {
     id:"j2",
     type:"jewelry",
-    category:"muncuq",
+    category:"бусины",
     name:"СБ0001",
     tags:["muncuq","бижутерия","бусины"],
     description:"Бижутерия из бусин.",

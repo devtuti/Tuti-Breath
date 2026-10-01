@@ -14,7 +14,21 @@ function renderHome(){
   const sales=PRODUCTS.filter(p=>p.sale&&match(p));
   $("#homePerfumes").innerHTML=perf.length?perf.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Подходящих товаров не найдено.</div>';
   $("#homeJewelry").innerHTML=jew.length?jew.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Подходящих товаров не найдено.</div>';
-  $("#saleGrid").innerHTML=sales.length?sales.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Сейчас активных скидок нет.</div>';
+  /*$("#saleGrid").innerHTML=sales.length?sales.map(productCard).join(""):'<div class="empty" style="grid-column:1/-1">Сейчас активных скидок нет.</div>';*/
+  $("#saleGrid").innerHTML = `
+  <div class="sale-banner">
+    <div class="sale-icon">🎁 </div>
+
+    <div class="sale-content">
+      <h3>Скидка 12% на первый заказ</h3>
+      <p>
+        При первой покупке аромата у нас
+        вы получите скидку <strong>12%</strong>.
+      </p>
+      <span>Подарок для новых клиентов Tuti Breath 💕 </span>
+    </div>
+  </div>
+`;
   bindCards();updateFavCount();
 }
 function bindCards(){

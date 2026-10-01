@@ -465,7 +465,208 @@ const PRODUCTS = [
     sale:false,
     featured:true
   },
+
+  {
+    id: "p21",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Bvlgari",
+    name: "Bvlgari Tygar",
+    tags: ["bvlgari", "tygar", "le gemme", "man", "мужской"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/bvlgari tygar.jpg",
+    sizes: [
+      { label: "10 мл", price: 1332 },
+      { label: "12 мл", price: 1665 },
+      { label: "15 мл", price: 2001 },
+      { label: "20 мл", price: 2667 },
+      { label: "25 мл", price: 3333 },
+      { label: "30 мл", price: 3999 },
+      { label: "50 мл", price: 6666 },
+      { label: "100 мл", price: 13335 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p22",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Tiziana Terenzi",
+    name: "Tiziana Terenzi Kirke",
+    tags: ["tiziana terenzi", "kirke", "unisex", "унисекс"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/tiziana terenzi kirke.jpg",
+    sizes: [
+      { label: "10 мл", price: 912 },
+      { label: "12 мл", price: 1140 },
+      { label: "15 мл", price: 1371 },
+      { label: "20 мл", price: 1827 },
+      { label: "25 мл", price: 2283 },
+      { label: "30 мл", price: 2739 },
+      { label: "50 мл", price: 4566 },
+      { label: "100 мл", price: 9135 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p23",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Victoria's Secret",
+    name: "Victoria's Secret Bombshell",
+    tags: ["victorias secret", "bombshell", "woman", "женский"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/victorias secret bombshell.jpg",
+    sizes: [
+      { label: "10 мл", price: 264 },
+      { label: "12 мл", price: 330 },
+      { label: "15 мл", price: 399 },
+      { label: "20 мл", price: 531 },
+      { label: "25 мл", price: 663 },
+      { label: "30 мл", price: 795 },
+      { label: "50 мл", price: 1326 },
+      { label: "100 мл", price: 2655 }
+    ],
+    sale: false,
+    featured: true
+  },
+
+  {
+    id: "p24",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Yves Saint Laurent",
+    name: "Black Opium",
+    tags: ["ysl", "black opium", "opium black", "woman", "женский"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/black opium.jpg",
+    sizes: [
+      { label: "10 мл", price: 327 },
+      { label: "12 мл", price: 405 },
+      { label: "15 мл", price: 486 },
+      { label: "20 мл", price: 651 },
+      { label: "25 мл", price: 813 },
+      { label: "30 мл", price: 975 },
+      { label: "50 мл", price: 1626 },
+      { label: "100 мл", price: 3255 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p25",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Creed",
+    name: "Creed Aventus",
+    tags: ["creed", "aventus", "man", "мужской"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/creed aventus.jpg",
+    sizes: [
+      { label: "10 мл", price: 948 },
+      { label: "12 мл", price: 1185 },
+      { label: "15 мл", price: 1475 },
+      { label: "20 мл", price: 1899 },
+      { label: "25 мл", price: 2373 },
+      { label: "30 мл", price: 2847 },
+      { label: "50 мл", price: 4746 },
+      { label: "100 мл", price: 9495 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p26",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Kilian",
+    name: "Angels' Share By Kilian",
+    tags: ["kilian", "angels share", "unisex", "унисекс"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/angels share kilian.jpg",
+    sizes: [
+      { label: "10 мл", price: 480 },
+      { label: "12 мл", price: 720 },
+      { label: "15 мл", price: 867 },
+      { label: "20 мл", price: 1155 },
+      { label: "25 мл", price: 1443 },
+      { label: "30 мл", price: 1731 },
+      { label: "50 мл", price: 2406 },
+      { label: "100 мл", price: 5775 }
+    ],
+    sale: false,
+    featured: true
+  },
   
+  {
+    id: "p27",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Guerlain",
+    name: "Aqua Allegoria Mandarine Basilic",
+    tags: ["guerlain", "aqua allegoria", "mandarine basilic", "woman", "женский"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/aqua allegoria mandarine basilic.jpg",
+    sizes: [
+      { label: "10 мл", price: 480 },
+      { label: "12 мл", price: 720 },
+      { label: "15 мл", price: 867 },
+      { label: "20 мл", price: 1155 },
+      { label: "25 мл", price: 1443 },
+      { label: "30 мл", price: 1731 },
+      { label: "50 мл", price: 2406 },
+      { label: "100 мл", price: 5775 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p28",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Byredo",
+    name: "Bal d'Afrique Byredo",
+    tags: ["byredo", "bal d'afrique", "unisex", "унисекс"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/bal d afrique byredo.jpg",
+    sizes: [
+      { label: "10 мл", price: 480 },
+      { label: "12 мл", price: 600 },
+      { label: "15 мл", price: 723 },
+      { label: "20 мл", price: 963 },
+      { label: "25 мл", price: 1203 },
+      { label: "30 мл", price: 1443 },
+      { label: "50 мл", price: 2406 },
+      { label: "100 мл", price: 4815 }
+    ],
+    sale: false,
+    featured: true
+  },
+  {
+    id: "p29",
+    type: "perfume",
+    category: "на_разлив",
+    marka: "Zarkoperfume",
+    name: "Pink Molecule 090.09",
+    tags: ["zarkoperfume", "pink molecule", "090.09", "unisex", "унисекс"],
+    description: "парфюмерия на разлив .",
+    image: "images/perfumes/pink molecule 090.09.jpg",
+    sizes: [
+      { label: "10 мл", price: 663 },
+      { label: "12 мл", price: 825 },
+      { label: "15 мл", price: 993 },
+      { label: "20 мл", price: 1323 },
+      { label: "25 мл", price: 1653 },
+      { label: "30 мл", price: 1983 },
+      { label: "50 мл", price: 3306 },
+      { label: "100 мл", price: 6615 }
+    ],
+    sale: false,
+    featured: true
+  },
+
   {
     id:"j1",
     type:"jewelry",

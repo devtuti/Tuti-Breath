@@ -667,6 +667,62 @@ const PRODUCTS = [
     featured: true
   },
 
+   {
+    id:"p30",
+    type:"perfume",
+    category:"original",
+    marka: "ZarkoPerfume",
+    name:"Sending love Zarkoperfume",
+    tags:["original","унисекс"],
+    description:"Оригинальная парфюмерия.",
+    image:"images/perfumes/zarkoperfume sending love.jpg",
+    sizes:[{label:"10 мл",price:1594}],
+    sale:false,
+    featured:true
+  },
+
+  {
+    id:"p31",
+    type:"perfume",
+    category:"original",
+    marka: "Giorgio Armani",
+    name:"Acqua di Gio Giorgio Armani",
+    tags:["original","мужской"],
+    description:"Оригинальная парфюмерия.",
+    image:"images/perfumes/acqua di gio giorgio armani original.jpg",
+    sizes:[{label:"10 мл",price:1231}, {label:"20 мл",price:2362}, {label:"30 мл",price:4093}],
+    sale:false,
+    featured:true
+  },
+
+  {
+    id:"p32",
+    type:"perfume",
+    category:"original",
+    marka: "Dolce Gabbana",
+    name:"Dolce Gabbana Lily",
+    tags:["original","женский"],
+    description:"Оригинальная парфюмерия.",
+    image:"images/perfumes/dolce gabbana lily.jpg",
+    sizes:[{label:"10 мл",price:1538}, {label:"20 мл",price:2976}, {label:"30 мл",price:4314}],
+    sale:false,
+    featured:true
+  },
+
+  {
+    id:"p33",
+    type:"perfume",
+    category:"original",
+    marka: "Chanel",
+    name:"Allure Homme Sport Chanel",
+    tags:["original","мужской"],
+    description:"Оригинальная парфюмерия.",
+    image:"images/perfumes/allure homme sport chanel original.jpg",
+    sizes:[{label:"10 мл",price:2710}],
+    sale:false,
+    featured:true
+  },
+
   {
     id:"j1",
     type:"jewelry",

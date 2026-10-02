@@ -689,7 +689,7 @@ const PRODUCTS = [
     name:"Acqua di Gio Giorgio Armani",
     tags:["original","мужской"],
     description:"Оригинальная парфюмерия.",
-    image:"images/perfumes/acqua di gio giorgio armani original.jpg",
+    image:"images/perfumes/acqua di gio giorgio armani.jpg",
     sizes:[{label:"10 мл",price:1231}, {label:"20 мл",price:2362}, {label:"30 мл",price:4093}],
     sale:false,
     featured:true
@@ -717,11 +717,212 @@ const PRODUCTS = [
     name:"Allure Homme Sport Chanel",
     tags:["original","мужской"],
     description:"Оригинальная парфюмерия.",
-    image:"images/perfumes/allure homme sport chanel original.jpg",
+    image:"images/perfumes/allure homme sport chanel.jpg",
     sizes:[{label:"10 мл",price:2710}],
     sale:false,
     featured:true
   },
+
+  {
+  id: "p34",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Dolce&Gabbana",
+  name: "Anthology L'Imperatrice 3",
+  tags: ["dolce&gabbana", "d&g", "l'imperatrice", "l'imperatrice 3", "anthology", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/dg limperatrice 3.jpg",
+  sizes: [
+    { label: "10 мл", price: 327 },
+    { label: "12 мл", price: 405 },
+    { label: "15 мл", price: 486 },
+    { label: "20 мл", price: 651 },
+    { label: "25 мл", price: 813 },
+    { label: "30 мл", price: 975 },
+    { label: "50 мл", price: 1626 },
+    { label: "100 мл", price: 3255 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p35",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Chanel",
+  name: "Coco Mademoiselle",
+  tags: ["chanel", "coco mademoiselle", "mademoiselle", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/chanel coco mademoiselle.jpg",
+  sizes: [
+    { label: "10 мл", price: 312 },
+    { label: "12 мл", price: 390 },
+    { label: "15 мл", price: 471 },
+    { label: "20 мл", price: 627 },
+    { label: "25 мл", price: 783 },
+    { label: "30 мл", price: 939 },
+    { label: "50 мл", price: 1566 },
+    { label: "100 мл", price: 3135 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p36",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Yves Rocher",
+  name: "Comme une Evidence",
+  tags: ["yves rocher", "comme une evidence", "evidence", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/yves rocher comme une evidence.jpg",
+  sizes: [
+    { label: "10 мл", price: 327 },
+    { label: "12 мл", price: 405 },
+    { label: "15 мл", price: 486 },
+    { label: "20 мл", price: 651 },
+    { label: "25 мл", price: 813 },
+    { label: "30 мл", price: 975 },
+    { label: "50 мл", price: 1626 },
+    { label: "100 мл", price: 3255 }
+  ],
+  sale: false,
+  featured: false
+}
+
+{
+  id: "p37",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Chanel",
+  name: "Bleu de Chanel",
+  tags: ["chanel", "bleu de chanel", "blue de chanel", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/bleu de chanel.jpg",
+  sizes: [
+    { label: "10 мл", price: 327 },
+    { label: "12 мл", price: 405 },
+    { label: "15 мл", price: 486 },
+    { label: "20 мл", price: 651 },
+    { label: "25 мл", price: 813 },
+    { label: "30 мл", price: 975 },
+    { label: "50 мл", price: 1626 },
+    { label: "100 мл", price: 3255 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p38",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Chanel",
+  name: "Platinum Égoïste",
+  tags: ["chanel", "platinum egoiste", "egoiste", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/chanel platinum egoiste.jpg",
+  sizes: [
+    { label: "10 мл", price: 264 },
+    { label: "12 мл", price: 330 },
+    { label: "15 мл", price: 396 },
+    { label: "20 мл", price: 531 },
+    { label: "25 мл", price: 663 },
+    { label: "30 мл", price: 795 },
+    { label: "50 мл", price: 1326 },
+    { label: "100 мл", price: 2655 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p39",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Nasomatto",
+  name: "Black Afgano",
+  tags: ["nasomatto", "black afgano", "afgano", "unisex", "унисекс"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/nasomatto black afgano.jpg",
+  sizes: [
+    { label: "10 мл", price: 1164 },
+    { label: "12 мл", price: 1455 },
+    { label: "15 мл", price: 1749 },
+    { label: "20 мл", price: 2331 },
+    { label: "25 мл", price: 2913 },
+    { label: "30 мл", price: 3495 },
+    { label: "50 мл", price: 5826 },
+    { label: "100 мл", price: 11655 }
+  ],
+  sale: false,
+  featured: false
+}
+
+{
+  id: "p40",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Yves Saint Laurent",
+  name: "Libre",
+  tags: ["yves saint laurent", "ysl", "libre", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/ysl libre.jpg",
+  sizes: [
+    { label: "10 мл", price: 384 },
+    { label: "12 мл", price: 480 },
+    { label: "15 мл", price: 579 },
+    { label: "20 мл", price: 771 },
+    { label: "25 мл", price: 963 },
+    { label: "30 мл", price: 1155 },
+    { label: "50 мл", price: 1926 },
+    { label: "100 мл", price: 3855 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p41",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Versace",
+  name: "Eros",
+  tags: ["versace", "eros", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/versace eros.jpg",
+  sizes: [
+    { label: "10 мл", price: 288 },
+    { label: "12 мл", price: 360 },
+    { label: "15 мл", price: 435 },
+    { label: "20 мл", price: 579 },
+    { label: "25 мл", price: 723 },
+    { label: "30 мл", price: 867 },
+    { label: "50 мл", price: 1446 },
+    { label: "100 мл", price: 2895 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p42",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Chanel",
+  name: "Chance Eau Fraîche",
+  tags: ["chanel", "chance", "chance fresh", "chance eau fraiche", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/chanel chance eau fraiche.jpg",
+  sizes: [
+    { label: "10 мл", price: 372 },
+    { label: "12 мл", price: 465 },
+    { label: "15 мл", price: 561 },
+    { label: "20 мл", price: 747 },
+    { label: "25 мл", price: 933 },
+    { label: "30 мл", price: 1119 },
+    { label: "50 мл", price: 1866 },
+    { label: "100 мл", price: 3735 }
+  ],
+  sale: false,
+  featured: false
+}
 
   {
     id:"j1",

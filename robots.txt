@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://tutibreath.com/sitemap.xml
+Sitemap: https://tutibreath.com/sitemap.xml

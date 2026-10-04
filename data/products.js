@@ -788,7 +788,7 @@ const PRODUCTS = [
   ],
   sale: false,
   featured: false
-}
+},
 
 {
   id: "p37",
@@ -855,7 +855,7 @@ const PRODUCTS = [
   ],
   sale: false,
   featured: false
-}
+},
 
 {
   id: "p40",
@@ -922,7 +922,7 @@ const PRODUCTS = [
   ],
   sale: false,
   featured: false
-}
+},
 
   {
     id:"j1",

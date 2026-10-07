@@ -924,6 +924,207 @@ const PRODUCTS = [
   featured: false
 },
 
+{
+  id: "p43",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Giorgio Armani",
+  name: "Acqua di Gio",
+  tags: ["giorgio armani", "acqua di gio", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/acqua di gio giorgio armani.jpg",
+  sizes: [
+    { label: "10 мл", price: 327 },
+    { label: "12 мл", price: 405 },
+    { label: "15 мл", price: 486 },
+    { label: "20 мл", price: 651 },
+    { label: "25 мл", price: 813 },
+    { label: "30 мл", price: 975 },
+    { label: "50 мл", price: 1626 },
+    { label: "100 мл", price: 3255 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p44",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Kajal",
+  name: "Almaz",
+  tags: ["kajal", "almaz", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/kajal almaz.jpg",
+  sizes: [
+    { label: "10 мл", price: 504 },
+    { label: "12 мл", price: 630 },
+    { label: "15 мл", price: 759 },
+    { label: "20 мл", price: 1011 },
+    { label: "25 мл", price: 1263 },
+    { label: "30 мл", price: 1515 },
+    { label: "50 мл", price: 2526 },
+    { label: "100 мл", price: 5055 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p45",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Lacoste",
+  name: "Lacoste White",
+  tags: ["lacoste", "lacoste white", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/lacoste white.jpg",
+  sizes: [
+    { label: "10 мл", price: 288 },
+    { label: "12 мл", price: 360 },
+    { label: "15 мл", price: 435 },
+    { label: "20 мл", price: 579 },
+    { label: "25 мл", price: 723 },
+    { label: "30 мл", price: 867 },
+    { label: "50 мл", price: 1446 },
+    { label: "100 мл", price: 2895 }
+  ],
+  sale: false,
+  featured: false
+},
+
+{
+  id: "p46",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Maison Francis Kurkdjian",
+  name: "Baccarat Rouge 540",
+  tags: ["maison francis kurkdjian", "baccarat rouge 540", "baccarat", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/baccarat rouge 540.jpg",
+  sizes: [
+    { label: "10 мл", price: 648 },
+    { label: "12 мл", price: 810 },
+    { label: "15 мл", price: 975 },
+    { label: "20 мл", price: 1299 },
+    { label: "25 мл", price: 1623 },
+    { label: "30 мл", price: 1947 },
+    { label: "50 мл", price: 3246 },
+    { label: "100 мл", price: 6495 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p47",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Amouage",
+  name: "Guidance",
+  tags: ["amouage", "guidance", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/amouage guidance.jpg",
+  sizes: [
+    { label: "10 мл", price: 876 },
+    { label: "12 мл", price: 1095 },
+    { label: "15 мл", price: 1317 },
+    { label: "20 мл", price: 1755 },
+    { label: "25 мл", price: 2193 },
+    { label: "30 мл", price: 2631 },
+    { label: "50 мл", price: 4386 },
+    { label: "100 мл", price: 8775 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p48",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Antonio Banderas",
+  name: "Blue Seduction",
+  tags: ["antonio banderas", "blue", "blue seduction", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/antonio banderas blue.jpg",
+  sizes: [
+    { label: "10 мл", price: 300 },
+    { label: "12 мл", price: 375 },
+    { label: "15 мл", price: 453 },
+    { label: "20 мл", price: 603 },
+    { label: "25 мл", price: 753 },
+    { label: "30 мл", price: 903 },
+    { label: "50 мл", price: 1506 },
+    { label: "100 мл", price: 3015 }
+  ],
+  sale: false,
+  featured: false
+},
+
+{
+  id: "p49",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Thomas Kosmala",
+  name: "No 4 Apres",
+  tags: ["thomas kosmala", "no 4 apres", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/thomas kosmala no 4 apres.jpg",
+  sizes: [
+    { label: "10 мл", price: 540 },
+    { label: "12 мл", price: 675 },
+    { label: "15 мл", price: 813 },
+    { label: "20 мл", price: 1083 },
+    { label: "25 мл", price: 1353 },
+    { label: "30 мл", price: 1623 },
+    { label: "50 мл", price: 2706 },
+    { label: "100 мл", price: 5415 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p50",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Kilian",
+  name: "Good Girl Gone Bad",
+  tags: ["kilian", "good girl gone bad", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/kilian good girl gone bad.jpg",
+  sizes: [
+    { label: "10 мл", price: 576 },
+    { label: "12 мл", price: 720 },
+    { label: "15 мл", price: 867 },
+    { label: "20 мл", price: 1155 },
+    { label: "25 мл", price: 1443 },
+    { label: "30 мл", price: 1731 },
+    { label: "50 мл", price: 3606 },
+    { label: "100 мл", price: 5775 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p51",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Marc Antoine Barrois",
+  name: "Ganymede",
+  tags: ["marc antoine barrois", "ganymede", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/marc antoine barrois ganymede.jpg",
+  sizes: [
+    { label: "10 мл", price: 1380 },
+    { label: "12 мл", price: 1725 },
+    { label: "15 мл", price: 2073 },
+    { label: "20 мл", price: 2763 },
+    { label: "25 мл", price: 3453 },
+    { label: "30 мл", price: 4143 },
+    { label: "50 мл", price: 6906 },
+    { label: "100 мл", price: 13815 }
+  ],
+  sale: false,
+  featured: false
+},
+
   {
     id:"j1",
     type:"jewelry",

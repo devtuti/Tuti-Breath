@@ -1125,6 +1125,208 @@ const PRODUCTS = [
   featured: false
 },
 
+{
+  id: "p52",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Lancome",
+  name: "Idole",
+  tags: ["lancome", "idole", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/lancome idole.jpg",
+  sizes: [
+    { label: "10 мл", price: 384 },
+    { label: "12 мл", price: 480 },
+    { label: "15 мл", price: 579 },
+    { label: "20 мл", price: 771 },
+    { label: "25 мл", price: 963 },
+    { label: "30 мл", price: 1155 },
+    { label: "50 мл", price: 1926 },
+    { label: "100 мл", price: 3855 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p53",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Narciso Rodriguez",
+  name: "For Her",
+  tags: ["narciso rodriguez", "for her", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/narciso rodriguez for her.jpg",
+  sizes: [
+    { label: "10 мл", price: 360 },
+    { label: "12 мл", price: 432 },
+    { label: "15 мл", price: 543 },
+    { label: "20 мл", price: 723 },
+    { label: "25 мл", price: 903 },
+    { label: "30 мл", price: 1083 },
+    { label: "50 мл", price: 1806 },
+    { label: "100 мл", price: 3615 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p54",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Lacoste",
+  name: "Pour Femme Timeless",
+  tags: ["lacoste", "pour femme timeless", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/lacoste pour femme timeless.jpg",
+  sizes: [
+    { label: "10 мл", price: 360 },
+    { label: "12 мл", price: 432 },
+    { label: "15 мл", price: 543 },
+    { label: "20 мл", price: 723 },
+    { label: "25 мл", price: 903 },
+    { label: "30 мл", price: 1083 },
+    { label: "50 мл", price: 1806 },
+    { label: "100 мл", price: 3615 }
+  ],
+  sale: false,
+  featured: false
+},
+
+{
+  id: "p55",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Tiziana Terenzi",
+  name: "Cassiopea",
+  tags: ["tiziana terenzi", "cassiopea", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/tiziana terenzi cassiopea.jpg",
+  sizes: [
+    { label: "10 мл", price: 360 },
+    { label: "12 мл", price: 432 },
+    { label: "15 мл", price: 543 },
+    { label: "20 мл", price: 723 },
+    { label: "25 мл", price: 903 },
+    { label: "30 мл", price: 1083 },
+    { label: "50 мл", price: 1806 },
+    { label: "100 мл", price: 3615 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p56",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Trussardi",
+  name: "My Land",
+  tags: ["trussardi", "my land", "мужской", "men"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/trussardi my land.jpg",
+  sizes: [
+    { label: "10 мл", price: 432 },
+    { label: "12 мл", price: 540 },
+    { label: "15 мл", price: 651 },
+    { label: "20 мл", price: 867 },
+    { label: "25 мл", price: 1083 },
+    { label: "30 мл", price: 1299 },
+    { label: "50 мл", price: 2166 },
+    { label: "100 мл", price: 4335 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p57",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Parfums de Marly",
+  name: "Delina",
+  tags: ["parfums de marly", "delina", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/parfums de marly delina.jpg",
+  sizes: [
+    { label: "10 мл", price: 384 },
+    { label: "12 мл", price: 480 },
+    { label: "15 мл", price: 579 },
+    { label: "20 мл", price: 771 },
+    { label: "25 мл", price: 963 },
+    { label: "30 мл", price: 1155 },
+    { label: "50 мл", price: 1926 },
+    { label: "100 мл", price: 3855 }
+  ],
+  sale: false,
+  featured: false
+},
+
+{
+  id: "p58",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Attar Collection",
+  name: "Hayati",
+  tags: ["attar collection", "hayati", "унисекс", "unisex"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/attar collection hayati.jpg",
+  sizes: [
+    { label: "10 мл", price: 327 },
+    { label: "12 мл", price: 405 },
+    { label: "15 мл", price: 486 },
+    { label: "20 мл", price: 651 },
+    { label: "25 мл", price: 813 },
+    { label: "30 мл", price: 975 },
+    { label: "50 мл", price: 1626 },
+    { label: "100 мл", price: 3255 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p59",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Byredo",
+  name: "Blanche",
+  tags: ["byredo", "blanche", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/byredo blanche.jpg",
+  sizes: [
+    { label: "10 мл", price: 372 },
+    { label: "12 мл", price: 465 },
+    { label: "15 мл", price: 561 },
+    { label: "20 мл", price: 747 },
+    { label: "25 мл", price: 933 },
+    { label: "30 мл", price: 1119 },
+    { label: "50 мл", price: 1866 },
+    { label: "100 мл", price: 3735 }
+  ],
+  sale: false,
+  featured: false
+},
+{
+  id: "p60",
+  type: "perfume",
+  category: "на_разлив",
+  marka: "Lanvin",
+  name: "Modern Princess",
+  tags: ["lanvin", "modern princess", "женский", "women"],
+  description: "парфюмерия на разлив .",
+  image: "images/perfumes/lanvin modern princess.jpg",
+  sizes: [
+    { label: "10 мл", price: 444 },
+    { label: "12 мл", price: 555 },
+    { label: "15 мл", price: 669 },
+    { label: "20 мл", price: 891 },
+    { label: "25 мл", price: 1113 },
+    { label: "30 мл", price: 1335 },
+    { label: "50 мл", price: 2226 },
+    { label: "100 мл", price: 4455 }
+  ],
+  sale: false,
+  featured: false
+},
+
+
   {
     id:"j1",
     type:"jewelry",
